@@ -8,9 +8,10 @@ resources:
   code: https://github.com/denkiwakame/academic-project-template
   video: https://www.youtube.com/embed/onbnb_D1wC8?si=xJczUv716Lt5aO4l&amp;start=1150
   huggingface: https://huggingface.co/
-description: explore a new challenge in transfer RL, where only a set of source policies collected under unknown diverse dynamics is available for learning a target task efficiently.
-image: https://academic-project-template.github.io/assets/teaser.png
-url: https://academic-project-template.github.io
+description: academic projectpage template that supports markdown and KaTeX
+
+image: https://denkiwakame.github.io/academic-project-template/assets/teaser.png
+url: https://denkiwakame.github.io/academic-project-template
 speakerdeck: # speakerdeck slide ID
 authors:
   - name: Wakame Denki*
