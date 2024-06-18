@@ -1,0 +1,26 @@
+name: deploy
+on:
+  push:
+    branches:
+      - project-page
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js 20
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+      - name: install
+        run: |
+          npm install
+      - name: build
+        run: |
+          npm run build
+        continue-on-error: true
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          publish_dir: ./build

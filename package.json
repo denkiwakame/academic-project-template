@@ -1,0 +1,63 @@
+{
+  "name": "sinicx-template",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "webpack --mode development",
+    "clean": "rm -rf build/",
+    "build": "webpack --mode production",
+    "postbuild": "react-snap",
+    "serve": "webpack serve --mode development",
+    "format": "prettier -w src/ --check",
+    "format:check": "prettier src/ --check",
+    "lint": "eslint src/"
+  },
+  "author": "Mai Nishimura <mai.nishimura@sinicx.com>",
+  "license": "MIT License",
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--disable-setuid-sandbox",
+      "--no-sandbox"
+    ],
+    "concurrency": 1,
+    "inlineCss": false
+  },
+  "volta": {
+    "node": "20.11.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-react": "^7.23.3",
+    "babel-loader": "^9.1.3",
+    "css-loader": "^6.9.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.6.0",
+    "js-yaml-loader": "^1.2.2",
+    "prettier": "^3.2.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "react-hot-loader": "^4.13.1",
+    "react-snap": "^1.13.1",
+    "sass": "^1.69.7",
+    "sass-loader": "^13.3.3",
+    "style-loader": "^3.3.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "fork-me-on-github": "^1.0.6",
+    "marked": "^12.0.1",
+    "marked-katex-extension": "^5.0.1",
+    "normalize.css": "^8.0.1",
+    "react": "^16.14.0",
+    "react-helmet": "^6.1.0",
+    "react-icons": "^5.0.1",
+    "react-player": "^2.14.1",
+    "sharp": "^0.33.2",
+    "swiper": "^11.0.5",
+    "uikit": "^3.17.11"
+  }
+}
