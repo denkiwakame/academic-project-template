@@ -1,5 +1,5 @@
 {
-  "name": "sinicx-template",
+  "name": "academic-project-template",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -12,7 +12,7 @@
     "format:check": "prettier src/ --check",
     "lint": "eslint src/"
   },
-  "author": "Mai Nishimura <mai.nishimura@sinicx.com>",
+  "author": "denkiwakame <denkivvakame@gmail.com>",
   "license": "MIT License",
   "reactSnap": {
     "puppeteerArgs": [
