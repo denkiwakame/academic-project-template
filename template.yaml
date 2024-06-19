@@ -54,8 +54,22 @@ abstract: |
   *Need to edit HTML directly?* Fear not! In addition to markdown, you can also directly write HTML with ease. Feel empowered to craft your content exactly as you envision it, whether through markdown's simplicity or the precision of HTML.
 
 body:
+  - title: Media examples
+    text: |
+      Refer to [UIKit Video Components Documentation](https://getuikit.com/docs/video) and [Grid system](https://getuikit.com/docs/grid)
+      <div class="uk-child-width-1-2@m" uk-grid>
+        <div>
+          <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
+        </div>
+        <div>
+          <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: hover"></video>
+        </div>
+      </div>
+
+      `assets/` images can loaded like: `<img src="assets/placeholder.png" class="uk-width-1-1" />`
+
+      <img src="assets/placeholder.png" class="uk-width-1-1" />
   - title: Markdown examples
-    image: placeholder.png
     text: |
       Here's our demo text showcasing the power of markdown and KaTeX integration!
       Markdown allows you to easily format text using simple syntax.
@@ -116,7 +130,6 @@ body:
         </table>
       </div>
   - title: KaTeX examples
-    image: null
     text: >
       $\KaTeX$ enables you to write mathematical expressions beautifully within your text (e.g. $\alpha$, $\beta$, $\gamma$ ).
       $$ax^2 + bx + c = 0$$
