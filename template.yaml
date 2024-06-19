@@ -59,10 +59,20 @@ body:
       Refer to [UIKit Video Components Documentation](https://getuikit.com/docs/video) and [Grid system](https://getuikit.com/docs/grid)
       <div class="uk-child-width-1-2@m" uk-grid>
         <div>
-          <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: inview"></video>
+          <video
+            src="https://yootheme.com/site/images/media/yootheme-pro.mp4"
+            loop
+            muted
+            uk-video="autoplay:inview"
+            />
         </div>
         <div>
-          <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" width="1800" height="1200" loop muted playsinline uk-video="autoplay: hover"></video>
+          <video
+            src="https://yootheme.com/site/images/media/yootheme-pro.mp4"
+            loop
+            muted
+            uk-video="autoplay:inview"
+            />
         </div>
       </div>
 

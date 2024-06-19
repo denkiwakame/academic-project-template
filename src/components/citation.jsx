@@ -43,7 +43,7 @@ export default class Citation extends React.Component {
         <h2 className="uk-heading-line uk-text-center">Citation</h2>
         <pre className="uk-padding-small">
           <CopyButton text={this.props.bibtex} />
-          <code id="bibtex">{this.props.bibtex}</code>
+          <code>{this.props.bibtex}</code>
         </pre>
       </div>
     );
