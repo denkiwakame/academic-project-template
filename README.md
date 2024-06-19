@@ -140,16 +140,12 @@ body:
  ...
 ```
 
-## Release your project page automatically by GitHub Actions
-- **Just in case the token above is unavailable:** generate personal access token by yourself
-  - see https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-set-personal-access-token-personal_token
-  - register the token as `PERSONAL_TOKEN` at `https://github.com/path/to/your/repo/settings/secrets/actions`
-
-### Release project-page
+### Release your project page automatically bt GitHub Actions
 - `$ git remote add github {your-github-repo-path}`
 - `$ git push github {local-project-page-branch}:project-page`
   - GitHub Action atuomatically build HTML on `project-page` branch, and then send it to `gh-pages` branch.
   - All you need to do is to push your project page code to `project-page` branch on your GitHub repo.
+- Refer to [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#getting-started) documentation for more details.
 
 ### If the project page is not released automatically:
 - set `Source` `Branch=gh-pages` `/(root)` at `https://github.com/path/to/your/repo/settings/pages`
