@@ -31,7 +31,11 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx$/i,
+        test: /\.(js|jsx)$/i,
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules/marked'),
+        ],
         exclude: '/node_modules/',
         use: {
           loader: 'babel-loader',

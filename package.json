@@ -13,7 +13,7 @@
     "lint": "eslint src/"
   },
   "author": "denkiwakame <denkivvakame@gmail.com>",
-  "license": "MIT License",
+  "license": "CC-BY-SA4.0",
   "reactSnap": {
     "puppeteerArgs": [
       "--disable-setuid-sandbox",
@@ -48,11 +48,11 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "fork-me-on-github": "^1.0.6",
-    "marked": "^12.0.1",
+    "marked": "^2.0.0",
     "marked-katex-extension": "^5.0.1",
     "normalize.css": "^8.0.1",
-    "react": "^16.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
     "react-icons": "^5.0.1",
     "react-player": "^2.14.1",
