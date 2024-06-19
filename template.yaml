@@ -66,7 +66,7 @@ body:
         </div>
       </div>
 
-      `assets/` images can loaded like: `<img src="assets/placeholder.png" class="uk-width-1-1" />`
+      `assets/` images can loaded like:
 
       <img src="assets/placeholder.png" class="uk-width-1-1" />
   - title: Markdown examples
