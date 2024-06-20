@@ -28,7 +28,7 @@ class ResourceBtn extends React.Component {
   }
   render() {
     if (!this.props.url) return null;
-    const pClass = `uk-button uk-button-text ${this.props.rid === 0 ? 'uk-first-column' : 'uk-margin-medium-left@s uk-margin-small-left'}`;
+    const aClass = `uk-button uk-button-text ${this.props.rid === 0 ? 'uk-first-column' : 'uk-margin-medium-left@s uk-margin-small-left'}`;
     const sClass =
       'uk-margin-small-left uk-margin-small-right uk-text-emphasis uk-text-bolder';
     const FaIcon = this.icons[this.props.title];
@@ -38,10 +38,10 @@ class ResourceBtn extends React.Component {
         : this.props.title;
     return (
       <>
-        <p className={pClass} href={this.props.url} target="_blank">
+        <a className={aClass} href={this.props.url} target="_blank">
           <FaIcon size="2em" />
           <span className={sClass}>{iTitle}</span>
-        </p>
+        </a>
       </>
     );
   }
