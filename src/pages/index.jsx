@@ -32,7 +32,7 @@ class Template extends React.Component {
               property: 'og:description',
               content: data.description,
             },
-            { property: 'og:image', content: data.image }, // FIXME
+            { property: 'og:image', content: data.image },
             { property: 'og:image:width', content: '912' },
             { property: 'og:image:height', content: '618' },
             { property: 'og:url', content: data.url },
@@ -41,7 +41,6 @@ class Template extends React.Component {
               content: 'summary_large_image',
             },
             { name: 'twitter:title', content: data.title },
-            { name: 'twitter:image', content: data.image },
             {
               name: 'twitter:description',
               content: data.description,
