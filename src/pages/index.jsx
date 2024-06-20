@@ -33,8 +33,9 @@ class Template extends React.Component {
               content: data.description,
             },
             { property: 'og:image', content: data.image },
-            { property: 'og:image:width', content: '912' },
-            { property: 'og:image:height', content: '618' },
+            { property: 'og:image:alt', content: data.description },
+            { property: 'og:image:width', content: '1200' },
+            { property: 'og:image:height', content: '630' },
             { property: 'og:url', content: data.url },
             {
               name: 'twitter:card',
@@ -47,6 +48,7 @@ class Template extends React.Component {
             },
             { name: 'twitter:url', content: data.url },
             { name: 'twitter:site', content: data.twitter },
+            { name: 'twitter:image:src', content: data.image },
           ]}
         />
         <Header

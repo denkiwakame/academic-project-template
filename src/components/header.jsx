@@ -9,7 +9,7 @@ const HuggingFace = ({ size }) => (
     role="img"
     aria-label="Hugging Face"
     aria-hidden="false"
-    style={{ fontSize: '1.3em' }} // 任意のスタイルを適用
+    style={{ fontSize: '1.2em' }} // 任意のスタイルを適用
   >
     🤗
   </span>

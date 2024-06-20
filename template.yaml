@@ -93,17 +93,17 @@ body:
       #### Heading Level 4
       Markdown allows you to create tables like the following:
       ### Fictitious AI Benchmark Results
-      | Model Name          | Accuracy (%) | Inference Time (ms) | Memory Usage (MB) | Training Time (hours) |
-      |---------------------|--------------|---------------------|-------------------|-----------------------|
-      | TransGPT-XT         | 96.3         | 8.2                 | 1200              | $\infty$                    |
-      | GigaBERT Prime      | 94.7         | 9.5                 | 1100              | $\infty$                    |
-      | MegaLSTM-Pro        | 92.5         | 10.1                | 1050              | $\infty$                    |
-      | UltraTransformer    | 97.1         | 7.8                 | 1300              | $\infty$                    |
-      | **QuantumDNN-ALPHA**    | 95.8         | 8.5                 | 1250              | $\infty$                    |
+      | Model Name          | Accuracy (%) | Inference Time (ms) |
+      |---------------------|--------------|---------------------|
+      | TransGPT-XT         | 96.3         | $\infty$                 |
+      | GigaBERT Prime      | 94.7         | 9.5                 |
+      | MegaLSTM-Pro        | 92.5         | 10.1                |
+      | UltraTransformer    | 97.1         | 7.8                 |
+      | **QuantumDNN-ALPHA**    | 95.8         | 8.5             |
 
       Of course, you can also directly write tables in HTML if needed. For more details, refer to the [UIKit Table documentation](https://getuikit.com/docs/table).
 
-      <div class="uk-overflow-auto">
+      <div class="uk-overflow-auto uk-width-1-1">
         <table class="uk-table uk-table-small uk-text-small uk-table-divider">
           <thead>
             <tr>

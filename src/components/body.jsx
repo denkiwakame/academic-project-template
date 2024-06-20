@@ -5,7 +5,7 @@ import markedKatex from 'marked-katex-extension';
 
 const renderer = new marked.Renderer();
 renderer.table = (header, body) => {
-  return `<div class="uk-overflow-auto"><table class="uk-table uk-table-small uk-text-small uk-table-divider"> ${header} ${body} </table></div>`;
+  return `<div class="uk-overflow-auto uk-width-1-1"><table class="uk-table uk-table-small uk-text-small uk-table-divider"> ${header} ${body} </table></div>`;
 };
 
 marked.use(markedKatex({ throwOnError: false }));
