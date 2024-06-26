@@ -41,7 +41,14 @@ export default class Citation extends React.Component {
     return (
       <div className="uk-section">
         <h2 className="uk-heading-line uk-text-center">Citation</h2>
-        <pre className="uk-padding-small">
+        <pre
+          className="uk-padding-small"
+          style={{
+            whiteSpace: 'pre-wrap',
+            wordWrap: 'break-word',
+            overflowWrap: 'break-word',
+          }}
+        >
           <CopyButton text={this.props.bibtex} />
           <code>{this.props.bibtex}</code>
         </pre>
