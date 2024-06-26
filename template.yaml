@@ -56,6 +56,29 @@ abstract: |
 body:
   - title: Media examples
     text: |
+      You can access media files in `src/images/` using `assets/` paths
+
+      <div class="uk-position-relative" uk-slideshow="animation: fade">
+        <div class="uk-slideshow-items">
+          <div>
+            <img src="assets/001.jpg" alt="" uk-cover>
+          </div>
+          <div>
+            <img src="assets/002.jpg" alt="" uk-cover>
+          </div>
+          <div>
+            <img src="assets/003.jpg" alt="" uk-cover>
+          </div>
+        </div>
+        <div class="uk-position-bottom-center uk-position-small">
+          <ul class="uk-thumbnav">
+            <li uk-slideshow-item="0"><a href="#"><img src="assets/001.jpg" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="1"><a href="#"><img src="assets/002.jpg" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="2"><a href="#"><img src="assets/003.jpg" width="100" height="67" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+
       Refer to [UIKit Video Components Documentation](https://getuikit.com/docs/video) and [Grid system](https://getuikit.com/docs/grid)
       <div class="uk-child-width-1-2@m" uk-grid>
         <div>
@@ -75,10 +98,6 @@ body:
             />
         </div>
       </div>
-
-      `assets/` images can loaded like:
-
-      <img src="assets/placeholder.png" class="uk-width-1-1" />
   - title: Markdown examples
     text: |
       Here's our demo text showcasing the power of markdown and KaTeX integration!
