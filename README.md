@@ -141,11 +141,8 @@ body:
 ```
 
 ### Release your project page automatically bt GitHub Actions
-- `$ git remote add github {your-github-repo-path}`
-- `$ git push github {local-project-page-branch}:project-page`
-  - GitHub Action atuomatically build HTML on `project-page` branch, and then send it to `gh-pages` branch.
-  - All you need to do is to push your project page code to `project-page` branch on your GitHub repo.
-- Refer to [actions-gh-pages](https://github.com/peaceiris/actions-gh-pages?tab=readme-ov-file#getting-started) documentation for more details.
-
-### If the project page is not released automatically:
-- set `Source` `Branch=gh-pages` `/(root)` at `https://github.com/path/to/your/repo/settings/pages`
+- Navigate to `https://github.com/{your-github-repo-path}/settings/pages`
+- Select `GitHub Actions` at **Build and Deployment > Source**
+- `$ git remote add origin {your-github-repo-path}`
+- `$ git push origin main`
+- See also: [GitHub Documentation](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [actions/deploy-pages](https://github.com/actions/deploy-pages)
