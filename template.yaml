@@ -1,7 +1,7 @@
 theme: default # default || dark
 organization: Pixel Genius Labs
 twitter: '@denkivvakame'
-title: 'Academic Project Page Template: Do Whatever the Hack You Want with This Template'
+title: 'Academic Project Page Template'
 resources:
   paper: https://openreview.net/
   arxiv: https://arxiv.org
@@ -107,6 +107,7 @@ body:
       - `inline code`.
 
       You can also create headings of various levels:
+      # Heading Level 1
       ## Heading Level 2
       ### Heading Level 3
       #### Heading Level 4

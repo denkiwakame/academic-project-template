@@ -9,7 +9,9 @@ export default class SpeakerDeck extends React.Component {
   render() {
     return this.props.dataId ? (
       <div className="uk-section">
-        <h2 className="uk-heading-line uk-text-center">Slides</h2>
+        <h2 className="uk-text-bold uk-heading-line">
+          <span>Slides</span>
+        </h2>
         <div
           style={{
             left: 0,

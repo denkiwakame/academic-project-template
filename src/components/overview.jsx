@@ -17,7 +17,9 @@ export default class Overview extends React.Component {
           className="uk-align-center uk-responsive-width"
           alt=""
         />
-        <h2 className="uk-heading-line uk-text-center">Abstract</h2>
+        <h2 className="uk-text-bold uk-heading-line">
+          <span>Abstract</span>
+        </h2>
         <div
           dangerouslySetInnerHTML={{
             __html: marked.parse(this.props.abstract),
