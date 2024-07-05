@@ -56,7 +56,7 @@ abstract: |
 body:
   - title: Media examples
     text: |
-      You can access media files in `src/images/` using `assets/` paths
+      You can access media files in `src/media/` using `assets/` paths
 
       <div class="uk-position-relative" uk-slideshow="animation: fade">
         <div class="uk-slideshow-items">

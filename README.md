@@ -66,8 +66,9 @@ src/
 │   └── video.jsx
 ├── html
 │   └── index.html
-├── images               # images to be relocated to assets/ by file-loader
+├── media                # media files to be relocated to assets/ by file-loader
 │   ├── placeholder.png
+│   ├── demo.mp4
 │   └── teaser.png
 ├── js
 │   └── styles.js        # embed styles to js

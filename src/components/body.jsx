@@ -31,7 +31,7 @@ class Content extends React.Component {
     if (this.props.image)
       return (
         <img
-          src={require('../images/' + this.props.image)}
+          src={require('../media/' + this.props.image)}
           className="uk-align-center uk-responsive-width"
           alt=""
         />
