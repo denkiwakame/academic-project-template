@@ -9,6 +9,7 @@ import Body from '../components/body.jsx';
 import Footer from '../components/footer.jsx';
 import Citation from '../components/citation.jsx';
 import SpeakerDeck from '../components/speakerdeck.jsx';
+import Projects from '../components/projects.jsx';
 import data from '../../template.yaml';
 
 class Template extends React.Component {
@@ -53,6 +54,7 @@ class Template extends React.Component {
         />
         <Header
           title={data.title}
+          journal={data.journal}
           conference={data.conference}
           authors={data.authors}
           affiliations={data.affiliations}
@@ -70,6 +72,7 @@ class Template extends React.Component {
           <SpeakerDeck dataId={data.speakerdeck} />
           <Body method={data.body} />
           <Citation bibtex={data.bibtex} />
+          <Projects projects={data.projects} />
         </div>
         <Footer />
       </div>

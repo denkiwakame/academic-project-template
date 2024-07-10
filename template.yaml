@@ -2,6 +2,7 @@ theme: default # default || dark
 organization: Pixel Genius Labs
 twitter: '@denkivvakame'
 title: 'Academic Project Page Template'
+journal: "AAAA'24"
 resources:
   paper: https://openreview.net/
   arxiv: https://arxiv.org
@@ -167,3 +168,12 @@ body:
       $$ \begin{CD} A @>a>> B \\ @VbVV @AAcA \\ C @= D \end{CD} $$
       [KaTeX supports a wide range of mathematical symbols and equations](https://katex.org/docs/support_table.html), ensuring your technical content is both clear and visually appealing.
       With markdown for text formatting and KaTeX for mathematical expressions, our template empowers you to communicate complex ideas effectively. Whether you're writing a scientific paper or a technical blog post, harnessing these tools will elevate your content and engage your readers.
+projects: # relevant projects
+  - title: Relevant Project I
+    description: abstract text
+    img: assets/teaser.png
+    journal: "ABCD'23"
+  - title: Relvant Project II
+    description: abstract text
+    img: assets/teaser.png
+    journal: "EFGR'22"

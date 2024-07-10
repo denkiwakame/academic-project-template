@@ -17,7 +17,7 @@ export default class Overview extends React.Component {
           className="uk-align-center uk-responsive-width"
           alt=""
         />
-        <h2 className="uk-text-bold uk-heading-line">
+        <h2 className="uk-text-bold uk-heading-line uk-text-center">
           <span>Abstract</span>
         </h2>
         <div
