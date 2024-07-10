@@ -173,7 +173,9 @@ projects: # relevant projects
     description: abstract text
     img: assets/teaser.png
     journal: "ABCD'23"
+    url: https://denkiwakame.github.io/academic-project-template/
   - title: Relvant Project II
     description: abstract text
     img: assets/teaser.png
     journal: "EFGR'22"
+    url: https://denkiwakame.github.io/academic-project-template/
