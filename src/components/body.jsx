@@ -46,7 +46,7 @@ export default class Body extends React.Component {
   }
 
   render() {
-    return this.props.method ? (
+    return this.props.body ? (
       <div className="uk-section">
         {this.props.method.map((subsection, idx) => {
           return (
