@@ -48,7 +48,7 @@ export default class Body extends React.Component {
   render() {
     return this.props.body ? (
       <div className="uk-section">
-        {this.props.method.map((subsection, idx) => {
+        {this.props.body.map((subsection, idx) => {
           return (
             <div key={'subsection-' + idx}>
               <Content title={subsection.title} />
