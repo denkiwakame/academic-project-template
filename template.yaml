@@ -1,13 +1,14 @@
 theme: default # default || dark
 organization: Pixel Genius Labs
 twitter: '@denkivvakame'
-title: 'Academic Project Page Template'
+title: Academic Project Page Template
 journal: "AAAA'24"
 resources:
-  paper: https://openreview.net/
+  paper: # https://openreview.net/
   arxiv: https://arxiv.org
   code: https://github.com/denkiwakame/academic-project-template
   video: https://www.youtube.com/embed/onbnb_D1wC8?si=xJczUv716Lt5aO4l&amp;start=1150
+  demo: https://colab.research.google.com/
   huggingface: https://huggingface.co/
 description: academic projectpage template that supports markdown and KaTeX
 

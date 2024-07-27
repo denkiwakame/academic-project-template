@@ -49,6 +49,7 @@
   },
   "dependencies": {
     "@iconify-json/logos": "^1.1.43",
+    "@iconify-json/simple-icons": "^1.1.110",
     "@iconify/react": "^5.0.1",
     "marked": "^13.0.0",
     "marked-katex-extension": "^5.0.1",

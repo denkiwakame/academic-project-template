@@ -10,6 +10,10 @@ const HuggingFace = ({ size }) => (
   <Icon icon="logos:hugging-face-icon" style={{ fontSize: size }} />
 );
 
+const GoogleColab = ({ size }) => (
+  <Icon icon="simple-icons:googlecolab" style={{ fontSize: size }} />
+);
+
 class ResourceBtn extends React.Component {
   constructor(props) {
     super(props);
@@ -22,6 +26,7 @@ class ResourceBtn extends React.Component {
       code: FaGithub,
       video: FaYoutube,
       huggingface: HuggingFace,
+      demo: GoogleColab,
     };
     this.handleResize = this.handleResize.bind(this);
   }
