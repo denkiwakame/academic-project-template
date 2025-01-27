@@ -12,7 +12,7 @@ resources:
   huggingface: https://huggingface.co/
 description: academic projectpage template that supports markdown and KaTeX
 
-image: https://denkiwakame.github.io/academic-project-template/assets/teaser.png
+image: https://denkiwakame.github.io/academic-project-template/media/teaser.png
 url: https://denkiwakame.github.io/academic-project-template
 speakerdeck: # speakerdeck slide ID
 authors:
@@ -49,7 +49,7 @@ bibtex: >
     note      = {This paper sets the benchmark for future AI research and applications.}
   }
 
-teaser: teaser.png
+teaser: /media/teaser.png
 abstract: |
   This is a versatile template designed to satisfy your research project page needs, all while harnessing the power of **UIKit** and **React**. Built on the foundations of simplicity and flexibility, this template allows you to focus on expressing your ideas without the hassle of directly handling CSS—thanks to customizable SASS variables.
   With markdown as your canvas and $\KaTeX$ for precise equations, crafting clear and engaging project page becomes effortless. Whether you're unraveling complex theories or presenting your findings, this template aims to support your scholarly endeavors with grace and ease.
@@ -58,25 +58,25 @@ abstract: |
 body:
   - title: Media examples
     text: |
-      You can access media files in `src/media/` using `assets/` paths
+      You can access media files in `public/media/` using `/media/` paths
 
       <div class="uk-position-relative" uk-slideshow="animation: fade">
         <div class="uk-slideshow-items">
           <div>
-            <img src="assets/001.jpg" alt="" uk-cover>
+            <img src="/media/001.jpg" alt="" uk-cover>
           </div>
           <div>
-            <img src="assets/002.jpg" alt="" uk-cover>
+            <img src="/media/002.jpg" alt="" uk-cover>
           </div>
           <div>
-            <img src="assets/003.jpg" alt="" uk-cover>
+            <img src="/media/003.jpg" alt="" uk-cover>
           </div>
         </div>
         <div class="uk-position-bottom-center uk-position-small">
           <ul class="uk-thumbnav">
-            <li uk-slideshow-item="0"><a href="#"><img src="assets/001.jpg" width="100" height="67" alt=""></a></li>
-            <li uk-slideshow-item="1"><a href="#"><img src="assets/002.jpg" width="100" height="67" alt=""></a></li>
-            <li uk-slideshow-item="2"><a href="#"><img src="assets/003.jpg" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="0"><a href="#"><img src="/media/001.jpg" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="1"><a href="#"><img src="/media/002.jpg" width="100" height="67" alt=""></a></li>
+            <li uk-slideshow-item="2"><a href="#"><img src="/media/003.jpg" width="100" height="67" alt=""></a></li>
           </ul>
         </div>
       </div>
@@ -172,11 +172,11 @@ body:
 projects: # relevant projects
   - title: Relevant Project I
     description: abstract text
-    img: assets/teaser.png
+    img: /media/teaser.png
     journal: "ABCD'23"
     url: https://denkiwakame.github.io/academic-project-template/
   - title: Relvant Project II
     description: abstract text
-    img: assets/teaser.png
+    img: /media/teaser.png
     journal: "EFGR'22"
     url: https://denkiwakame.github.io/academic-project-template/

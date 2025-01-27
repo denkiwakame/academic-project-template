@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "vite",
     "clean": "rm -rf build/",
-    "build": "webpack --mode production",
+    "build": "vite build",
     "postbuild": "react-snap",
-    "serve": "webpack serve --mode development",
+    "serve": "vite",
+    "preview": "vite preview",
     "format": "prettier -w src/ --check",
     "format:check": "prettier src/ --check",
     "lint": "eslint src/"
@@ -26,26 +27,15 @@
     "node": "20.11.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.23.8",
-    "@babel/preset-react": "^7.23.3",
-    "babel-loader": "^9.1.3",
-    "css-loader": "^6.9.0",
+    "@rollup/plugin-yaml": "^4.1.2",
+    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
-    "file-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.6.0",
-    "js-yaml-loader": "^1.2.2",
     "prettier": "^3.2.1",
     "prettier-plugin-organize-imports": "^3.2.4",
-    "react-hot-loader": "^4.13.1",
     "react-snap": "^1.13.1",
-    "sass": "^1.69.7",
-    "sass-loader": "^13.3.3",
-    "style-loader": "^3.3.4",
-    "url-loader": "^4.1.1",
-    "webpack": "^5.89.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "sass": "^1.83.4",
+    "vite": "^6.0.11"
   },
   "dependencies": {
     "@iconify-json/logos": "^1.1.43",

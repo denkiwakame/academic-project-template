@@ -8,9 +8,9 @@ const loadTheme = async () => {
   const theme = data.theme;
   try {
     if (theme == 'dark') {
-      await import('../scss/dark-theme.scss');
+      await import('@/scss/dark-theme.scss');
     } else {
-      await import('../scss/theme.scss');
+      await import('@/scss/theme.scss');
     }
     UIkit.use(Icons);
   } catch (err) {

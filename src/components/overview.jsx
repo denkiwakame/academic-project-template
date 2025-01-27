@@ -13,7 +13,7 @@ export default class Overview extends React.Component {
     return (
       <div className="uk-section">
         <img
-          src={require('../media/' + this.props.teaser)}
+          src={`${this.props.teaser}`}
           className="uk-align-center uk-responsive-width"
           alt=""
         />
