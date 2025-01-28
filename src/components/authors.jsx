@@ -10,7 +10,7 @@ export default class Authors extends React.Component {
     const columnMaxLen =
       this.props.authors.length > 4 ? 3 : this.props.authors.length;
     const authorClass = `uk-width-1-${columnMaxLen} uk-width-1-${this.props.authors.length}@m`;
-    const affliationClass = `uk-width-1-${this.props.affiliations.length} uk-margin-small-top`;
+    const affiliationClass = `uk-width-1-${this.props.affiliations.length} uk-margin-small-top`;
     return (
       <div>
         <div
@@ -34,7 +34,7 @@ export default class Authors extends React.Component {
         >
           {this.props.affiliations.map((affiliation, idx) => {
             return (
-              <span className={affliationClass} key={'affiliation-' + idx}>
+              <span className={affiliationClass} key={'affiliation-' + idx}>
                 <sup>{idx + 1}</sup>
                 {affiliation}
               </span>

@@ -6,11 +6,14 @@
     "dev": "vite",
     "clean": "rm -rf build/",
     "build": "vite build",
-    "serve": "vite",
     "preview": "vite preview",
-    "format": "prettier -w src/ --check",
-    "format:check": "prettier src/ --check",
-    "lint": "eslint src/"
+    "format": "prettier src/ --check",
+    "format:fix": "prettier -w src/ --check",
+    "lint": "eslint src/",
+    "typos": "typos",
+    "typos:fix": "typos --write-changes",
+    "prepare": "husky init",
+    "lint-staged": "lint-staged"
   },
   "author": "denkiwakame <denkivvakame@gmail.com>",
   "license": "CC-BY-SA4.0",
@@ -23,8 +26,10 @@
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
     "js-yaml": "^4.1.0",
+    "lint-staged": "^15.4.3",
     "prettier": "^3.2.1",
     "prettier-plugin-organize-imports": "^3.2.4",
+    "typos-rs-npm": "github:dalisoft/typos-rs-npm",
     "vite": "^6.0.11",
     "vite-plugin-html-prerender": "^0.2.0"
   },
@@ -44,5 +49,17 @@
     "sharp": "^0.33.2",
     "swiper": "^11.0.5",
     "uikit": "^3.22.3"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "prettier --write",
+      "eslint"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ],
+    "*": [
+      "typos --write-changes"
+    ]
   }
 }

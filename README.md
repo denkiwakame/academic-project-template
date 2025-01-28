@@ -1,13 +1,19 @@
 # Academic Projectpage Template
+
 [![build](https://github.com/denkiwakame/academic-project-template/actions/workflows/build.yaml/badge.svg)](https://github.com/denkiwakame/academic-project-template/actions/workflows/build.yaml) [![build](https://github.com/denkiwakame/academic-project-template/actions/workflows/lint.yaml/badge.svg)](https://github.com/denkiwakame/academic-project-template/actions/workflows/lint.yaml)
 [![license](https://img.shields.io/badge/LICENSE-CC--BY--SA4.0-important.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+
 - An academic project page template powered by [React](https://ja.reactjs.org/) + [UIKit](https://getuikit.com/), w/ markdown and KaTeX support !
 - **Demo**: ⛅[default-theme](https://denkiwakame.github.io/academic-project-template)
 
 ## Prerequisites
+
 - Before you begin, ensure you have met the following requirements:
+
 ### 🪟WSL 🐧Linux 🍎MacOS
+
 #### Install nodejs>=20 using [node version manager](https://volta.sh/)
+
 ```bash
 $ curl https://get.volta.sh/ | bash
 # restart your shell...
@@ -19,7 +25,9 @@ v20.11.0
 $ npm --version
 10.2.4
 ```
+
 #### Install puppeteer dependencies
+
 - react-snap uses Headless Chromium through puppeteer to [pre-render React apps](https://blog.logrocket.com/pre-rendering-react-app-react-snap/).
 
 ```bash
@@ -27,13 +35,17 @@ sudo apt install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 li
 ```
 
 ## Usage
+
 ### Installation
+
 - Clone this repository
 
 ```sh
 $ npm install
 ```
+
 ### Build
+
 ```sh
 $ npm run clean
 $ npm run build
@@ -41,17 +53,20 @@ $ npm run serve
 ```
 
 ### Develop
+
 ```sh
 $ npm run serve
 ```
 
 ### Customize
+
 - You can change styles without writing css. Modify [UIKit variables](https://github.com/uikit/uikit/blob/bc6dd1851652e5b77387a1efefc16cea6e3d165b/src/scss/variables.scss) at `src/scss/theme.scss`
 - You can extend `*.jsx` files using these assets or custom React Components.
   - UIKit Components https://getuikit.com/docs/introduction
   - React-Icons https://react-icons.github.io/react-icons/
 
 ### Structure
+
 ```
 template.yaml    # template arguments
 src/
@@ -79,8 +94,9 @@ src/
 ```
 
 ### Template
-- fillin values at `template.yaml`
-- fillin `null` for N/A contents (e.g. `method: null`)
+
+- filling values at `template.yaml`
+- filling `null` for N/A contents (e.g. `method: null`)
 
 ```yaml
 theme: default # default || dark
@@ -137,11 +153,11 @@ abstract: |
   With markdown as your canvas and $\KaTeX$ for precise equations, crafting clear and engaging project page becomes effortless. Whether you're unraveling complex theories or presenting your findings, this template aims to support your scholarly endeavors with grace and ease.
   *Need to edit HTML directly?* Fear not! In addition to markdown, you can also directly write HTML with ease. Feel empowered to craft your content exactly as you envision it, whether through markdown's simplicity or the precision of HTML.
 
-body:
- ...
+body: ...
 ```
 
 ### Release your project page automatically bt GitHub Actions
+
 - Navigate to `https://github.com/{your-github-repo-path}/settings/pages`
 - Select `GitHub Actions` at **Build and Deployment > Source**
 - `$ git remote add origin {your-github-repo-path}`
