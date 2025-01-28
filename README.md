@@ -26,14 +26,6 @@ $ npm --version
 10.9.2
 ```
 
-#### Install puppeteer dependencies
-
-- react-snap uses Headless Chromium through puppeteer to [pre-render React apps](https://blog.logrocket.com/pre-rendering-react-app-react-snap/).
-
-```bash
-sudo apt install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb libgbm-dev fonts-ipafont
-```
-
 ## Usage
 
 ### Installation
@@ -44,18 +36,26 @@ sudo apt install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 li
 $ npm install
 ```
 
+### Develop
+
+```sh
+$ npm run serve
+```
+
 ### Build
 
 ```sh
 $ npm run clean
 $ npm run build
-$ npm run serve
+$ npm run preview
 ```
 
-### Develop
+#### Install puppeteer dependencies
 
-```sh
-$ npm run serve
+- react-snap uses Headless Chromium through puppeteer to [pre-render React apps](https://blog.logrocket.com/pre-rendering-react-app-react-snap/).
+
+```bash
+sudo apt install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb libgbm-dev fonts-ipafont
 ```
 
 ### Customize
