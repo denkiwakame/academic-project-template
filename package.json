@@ -51,7 +51,7 @@
     "uikit": "^3.22.3"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
+    "src/*.{js,jsx}": [
       "prettier --write",
       "eslint"
     ],
