@@ -6,6 +6,7 @@
     "dev": "vite",
     "clean": "rm -rf build/",
     "build": "vite build",
+    "postbuild": "react-snap",
     "preview": "vite preview",
     "format": "prettier src/ --check",
     "format:fix": "prettier -w src/ --check",
@@ -20,6 +21,14 @@
   "volta": {
     "node": "22.13.1"
   },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--disable-setuid-sandbox",
+      "--no-sandbox"
+    ],
+    "concurrency": 1,
+    "inlineCss": false
+  },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.1.2",
     "@vitejs/plugin-react": "^4.3.4",
@@ -29,6 +38,7 @@
     "js-yaml": "^4.1.0",
     "lint-staged": "^15.4.3",
     "prettier": "^3.2.1",
+    "react-snap": "^1.23.0",
     "sass": "^1.83.4",
     "sharp": "^0.33.2",
     "typos-rs-npm": "github:dalisoft/typos-rs-npm",
