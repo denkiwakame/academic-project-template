@@ -1,4 +1,4 @@
-name: eslint
+name: lint
 
 on:
   push:
@@ -11,19 +11,23 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '20.11.0'
-      - uses: actions/cache@v3
-        id: npm_cache_id
+          node-version: '22.x'
+      - name: Cache node_modules
+        uses: actions/cache@v3
         with:
           path: '**/node_modules'
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-      - name: install
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: npm install
-      - name: eslint
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Install dependencies
+        run: npm ci
+      - name: ESLint
         run: npm run lint
-      - name: prettier
-        run: npm run format:check
+      - name: Prettier
+        run: npm run format
+      - name: Typos
+        runt: typos
