@@ -119,7 +119,7 @@ resources:
 
 ```bash
 git remote add origin your-repo-url
-git push origin main
+git push origin project-page
 ```
 
 📚 For more details:
