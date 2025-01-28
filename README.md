@@ -52,7 +52,7 @@ npm install
 ### 💻 Development Server
 
 ```sh
-npm run serve
+npm run dev
 ```
 
 ### 🏗️ Build
@@ -122,19 +122,10 @@ git remote add origin your-repo-url
 git push origin main
 ```
 
-The included GitHub Actions workflow will automatically:
+📚 For more details:
 
-- Build your project
-- Deploy to GitHub Pages
-- Update on every push to main branch
-
-### Custom Domain (Optional)
-
-1. Add your domain in repository Settings > Pages > Custom domain
-2. Create a CNAME record pointing to `your-username.github.io`
-3. Add a `CNAME` file in the `public` directory with your domain
-
-📚 For more details: [GitHub Pages Documentation](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [GitHub Pages Documentation](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+- [actions-deploy-pages](https://github.com/actions/deploy-pages)
 
 ## 📄 License
 
