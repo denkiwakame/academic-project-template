@@ -17,13 +17,13 @@
 ```bash
 $ curl https://get.volta.sh/ | bash
 # restart your shell...
-$ volta install node@20.11.0
-$ volta pin node@20.11.0
+$ volta install node@22.13.1
+$ volta pin node@22.13.1
 
 $ node --version
-v20.11.0
+v22.13.1
 $ npm --version
-10.2.4
+10.9.2
 ```
 
 #### Install puppeteer dependencies

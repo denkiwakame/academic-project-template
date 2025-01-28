@@ -12,26 +12,27 @@
     "lint": "eslint src/",
     "typos": "typos",
     "typos:fix": "typos --write-changes",
-    "prepare": "husky init",
+    "prepare": "husky",
     "lint-staged": "lint-staged"
   },
   "author": "denkiwakame <denkivvakame@gmail.com>",
   "license": "CC-BY-SA4.0",
   "volta": {
-    "node": "20.11.0"
+    "node": "22.13.1"
   },
   "devDependencies": {
     "@rollup/plugin-yaml": "^4.1.2",
     "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^8.56.0",
     "eslint-plugin-react": "^7.33.2",
+    "husky": "^9.1.7",
     "js-yaml": "^4.1.0",
     "lint-staged": "^15.4.3",
     "prettier": "^3.2.1",
-    "prettier-plugin-organize-imports": "^3.2.4",
+    "sass": "^1.83.4",
+    "sharp": "^0.33.2",
     "typos-rs-npm": "github:dalisoft/typos-rs-npm",
-    "vite": "^6.0.11",
-    "vite-plugin-html-prerender": "^0.2.0"
+    "vite": "^6.0.11"
   },
   "dependencies": {
     "@iconify-json/logos": "^1.1.43",
@@ -45,8 +46,6 @@
     "react-helmet": "^6.1.0",
     "react-icons": "^5.0.1",
     "react-player": "^2.14.1",
-    "sass": "^1.83.4",
-    "sharp": "^0.33.2",
     "swiper": "^11.0.5",
     "uikit": "^3.22.3"
   },
