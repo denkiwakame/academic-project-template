@@ -3,10 +3,10 @@ name: lint
 on:
   push:
     branches:
-      - main
+      - project-page
   pull_request:
     branches:
-      - main
+      - project-page
 jobs:
   lint:
     runs-on: ubuntu-latest
