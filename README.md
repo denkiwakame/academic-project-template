@@ -68,7 +68,8 @@ $ npm run serve
 ### Structure
 
 ```
-template.yaml    # template arguments
+template.yaml           # template arguments
+index.html              # root HTML
 src/
 ├── components          # React components loaded in index.jsx
 │   ├── authors.jsx
@@ -79,18 +80,17 @@ src/
 │   ├── abstract.jsx
 │   ├── body.jsx
 │   └── video.jsx
-├── html
-│   └── index.html
-├── media                # media files to be relocated to assets/ by file-loader
-│   ├── placeholder.png
-│   ├── demo.mp4
-│   └── teaser.png
 ├── js
 │   └── styles.js        # embed styles to js
 ├── pages
-│   └── index.jsx        # template root
+│   └── index.jsx        # root template
 └── scss                 # color theme zoo
     └── theme.scss
+public/
+├── media                # media files to be relocated to /media folder
+│   ├── placeholder.png
+│   ├── demo.mp4
+│   └── teaser.png
 ```
 
 ### Template
