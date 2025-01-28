@@ -1,165 +1,141 @@
-# Academic Projectpage Template
+# 🎨 Academic Project Page Template
 
-[![build](https://github.com/denkiwakame/academic-project-template/actions/workflows/build.yaml/badge.svg)](https://github.com/denkiwakame/academic-project-template/actions/workflows/build.yaml) [![build](https://github.com/denkiwakame/academic-project-template/actions/workflows/lint.yaml/badge.svg)](https://github.com/denkiwakame/academic-project-template/actions/workflows/lint.yaml)
+[![build](https://github.com/denkiwakame/academic-project-template/actions/workflows/build.yaml/badge.svg)](https://github.com/denkiwakame/academic-project-template/actions/workflows/build.yaml) [![lint](https://github.com/denkiwakame/academic-project-template/actions/workflows/lint.yaml/badge.svg)](https://github.com/denkiwakame/academic-project-template/actions/workflows/lint.yaml)
 [![license](https://img.shields.io/badge/LICENSE-CC--BY--SA4.0-important.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
 
-- An academic project page template powered by [React](https://ja.reactjs.org/) + [UIKit](https://getuikit.com/), w/ markdown and KaTeX support !
-- **Demo**: ⛅[default-theme](https://denkiwakame.github.io/academic-project-template)
+## ✨ Features
 
-## Prerequisites
+- 🚀 Built with [React](https://react.dev/) + [UIKit](https://getuikit.com/)
+- 📝 Markdown support with full styling capabilities
+- ➗ Mathematical equations with KaTeX
+- 🎨 Customizable themes
+- 🔄 Auto-deployment with GitHub Actions
+- 📱 Fully responsive design
 
-- Before you begin, ensure you have met the following requirements:
+🌐 **Demo**: [default-theme](https://denkiwakame.github.io/academic-project-template)
 
-### 🪟WSL 🐧Linux 🍎MacOS
+## 🚦 Prerequisites
 
-#### Install nodejs>=20 using [node version manager](https://volta.sh/)
+### System Requirements
+
+Supported platforms:
+
+- 🪟 Windows (WSL)
+- 🐧 Linux
+- 🍎 macOS
+
+### 📦 Node.js Setup
+
+Recommended: Install Node.js using [Volta](https://volta.sh/)
 
 ```bash
-$ curl https://get.volta.sh/ | bash
-# restart your shell...
-$ volta install node@22.13.1
-$ volta pin node@22.13.1
+# Install Volta
+curl https://get.volta.sh/ | bash
 
-$ node --version
-v22.13.1
-$ npm --version
-10.9.2
+# After restarting your shell...
+volta install node@22.13.1
+volta pin node@22.13.1
+
+# Verify installation
+node --version  # v22.13.1
+npm --version   # 10.9.2
 ```
 
-## Usage
+## 🛠️ Development Guide
 
-### Installation
-
-- Clone this repository
+### 📥 Installation
 
 ```sh
-$ npm install
+npm install
 ```
 
-### Develop
+### 💻 Development Server
 
 ```sh
-$ npm run serve
+npm run serve
 ```
 
-### Build
+### 🏗️ Build
 
 ```sh
-$ npm run clean
-$ npm run build
-$ npm run preview
+npm run clean
+npm run build
+npm run preview
 ```
 
-#### Install puppeteer dependencies
+#### 🤖 Puppeteer Dependencies (for react-snap pre-rendering)
 
-- react-snap uses Headless Chromium through puppeteer to [pre-render React apps](https://blog.logrocket.com/pre-rendering-react-app-react-snap/).
+Required packages for Headless Chrome (pre-rendering):
 
 ```bash
 sudo apt install -y libgtk2.0-0 libgtk-3-0 libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb libgbm-dev fonts-ipafont
 ```
 
-### Customize
+## 🎨 Customization
 
-- You can change styles without writing css. Modify [UIKit variables](https://github.com/uikit/uikit/blob/bc6dd1851652e5b77387a1efefc16cea6e3d165b/src/scss/variables.scss) at `src/scss/theme.scss`
-- You can extend `*.jsx` files using these assets or custom React Components.
-  - UIKit Components https://getuikit.com/docs/introduction
-  - React-Icons https://react-icons.github.io/react-icons/
+- 💅 Customize styles without writing CSS: modify [UIKit variables](https://github.com/uikit/uikit/blob/develop/src/scss/variables.scss) in `src/scss/theme.scss`
+- 🧩 Extend components with:
+  - [UIKit Components](https://getuikit.com/docs/introduction)
+  - [React Icons](https://react-icons.github.io/react-icons/)
 
-### Structure
+## 📁 Project Structure
 
 ```
-template.yaml           # template arguments
-index.html              # root HTML
+template.yaml         # Configuration file
+index.html            # Root HTML
 src/
-├── components          # React components loaded in index.jsx
-│   ├── authors.jsx
-│   ├── citation.jsx
-│   ├── footer.jsx
-│   ├── header.jsx
-│   ├── method.jsx
-│   ├── abstract.jsx
-│   ├── body.jsx
-│   └── video.jsx
-├── js
-│   └── styles.js        # embed styles to js
-├── pages
-│   └── index.jsx        # root template
-└── scss                 # color theme zoo
+├── components/       # React components
+├── js/
+│   └── styles.js     # Style settings
+├── pages/
+│   └── index.jsx     # Main template
+└── scss/             # Theme settings
     └── theme.scss
 public/
-├── media                # media files to be relocated to /media folder
-│   ├── placeholder.png
-│   ├── demo.mp4
-│   └── teaser.png
+└── media/            # Media files
 ```
 
-### Template
+## ⚙️ Configuration
 
-- filling values at `template.yaml`
-- filling `null` for N/A contents (e.g. `method: null`)
+Configure your project in `template.yaml`, leaving the N/A fields as "null".
 
 ```yaml
 theme: default # default || dark
-organization: Pixel Genius Labs
-twitter: '@denkivvakame'
-title: 'Academic Project Page Template: Do Whatever the Hack You Want with This Template'
+organization: 'Your Lab'
+title: 'Project Title'
 resources:
-  paper: https://openreview.net/
-  arxiv: https://arxiv.org
-  code: https://github.com/denkiwakame/academic-project-template
-  video: https://www.youtube.com/embed/onbnb_D1wC8?si=xJczUv716Lt5aO4l&amp;start=1150
-  huggingface: https://huggingface.co/
-description: academic projectpage template that supports markdown and KaTeX
-image: https://denkiwakame.github.io/academic-project-template/assets/teaser.png
-url: https://denkiwakame.github.io/academic-project-template
-speakerdeck: # speakerdeck slide ID
-authors:
-  - name: Wakame Denki*
-    affiliation: [1, 2]
-    url: http://denkiwakame.github.io/
-    position: intern
-  - name: Jane Doe
-    affiliation: [1]
-    position: Researcher
-    url: https://thispersondoesnotexist.com/
-  - name: John Smith
-    affiliation: [1]
-    position: Researcher
-    url: https://thispersondoesnotexist.com/
-affiliations:
-  - Pixel Genius Labs
-  - NeuroNauts Academy
-meta:
-  - '*work done while she was interning at Pixel Genius Lab.'
-bibtex: >
-  @article{doe2024superai,
-    author    = {Jane Doe and John Smith},
-    title     = {Unleashing the Power of Super AI: Transforming the Future of Technology},
-    journal   = {Journal of Superintelligent Systems},
-    year      = {2024},
-    volume    = {99},
-    number    = {1},
-    pages     = {1-42},
-    month     = {January},
-    keywords  = {Super AI, Machine Learning, Artificial Intelligence, Technological Innovation},
-    doi       = {10.9999/jsis.2024.001},
-    url       = {https://www.example.com/superai-article},
-    note      = {This paper sets the benchmark for future AI research and applications.}
-  }
-
-teaser: teaser.png
-abstract: |
-  This is a versatile template designed to satisfy your research project page needs, all while harnessing the power of **UIKit** and **React**. Built on the foundations of simplicity and flexibility, this template allows you to focus on expressing your ideas without the hassle of directly handling CSS—thanks to customizable SASS variables.
-  With markdown as your canvas and $\KaTeX$ for precise equations, crafting clear and engaging project page becomes effortless. Whether you're unraveling complex theories or presenting your findings, this template aims to support your scholarly endeavors with grace and ease.
-  *Need to edit HTML directly?* Fear not! In addition to markdown, you can also directly write HTML with ease. Feel empowered to craft your content exactly as you envision it, whether through markdown's simplicity or the precision of HTML.
-
-body: ...
+  paper: https://example.com/paper
+  code: https://github.com/your/repo
+# ... other configurations
 ```
 
-### Release your project page automatically bt GitHub Actions
+## 🚀 Release Your Project Page
 
-- Navigate to `https://github.com/{your-github-repo-path}/settings/pages`
-- Select `GitHub Actions` at **Build and Deployment > Source**
-- `$ git remote add origin {your-github-repo-path}`
-- `$ git push origin main`
-- See also: [GitHub Documentation](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site) and [actions/deploy-pages](https://github.com/actions/deploy-pages)
+### Automatic Deployment with GitHub Actions
+
+1. Go to your repository's Settings > Pages
+2. Under Build and Deployment > Source, select `GitHub Actions`
+3. Configure your remote repository:
+
+```bash
+git remote add origin your-repo-url
+git push origin main
+```
+
+The included GitHub Actions workflow will automatically:
+
+- Build your project
+- Deploy to GitHub Pages
+- Update on every push to main branch
+
+### Custom Domain (Optional)
+
+1. Add your domain in repository Settings > Pages > Custom domain
+2. Create a CNAME record pointing to `your-username.github.io`
+3. Add a `CNAME` file in the `public` directory with your domain
+
+📚 For more details: [GitHub Pages Documentation](https://docs.github.com/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+## 📄 License
+
+[CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
