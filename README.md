@@ -12,7 +12,7 @@
 - 🔄 Auto-deployment with GitHub Actions
 - 📱 Fully responsive design
 
-🌐 **Demo**: [default-theme](https://denkiwakame.github.io/academic-project-template)
+🌐 **Demo**: [default-theme](https://denkiwakame.github.io/academic-project-template) | [classic-theme](https://github.com/user-attachments/assets/b8bc1e19-01b1-41a8-aff7-69047bb6ece2)
 
 ## 🚦 Prerequisites
 
