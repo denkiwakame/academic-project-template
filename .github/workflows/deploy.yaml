@@ -16,14 +16,15 @@ jobs:
       - name: Use Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 22.12.0
-      - name: install
+          node-version: '22.13.1'
+          cache: 'npm'
+      - name: Install dependencies
         run: npm ci
-      - name: build
+      - name: Build
         run: npm run build
         continue-on-error: true
-      - name: upload
-        uses: actions/upload-pages-artifact@v2
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
           path: build
   deploy:
@@ -35,4 +36,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
