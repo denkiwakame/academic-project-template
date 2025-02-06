@@ -172,6 +172,88 @@ body:
       $$ \begin{CD} A @>a>> B \\ @VbVV @AAcA \\ C @= D \end{CD} $$
       [KaTeX supports a wide range of mathematical symbols and equations](https://katex.org/docs/support_table.html), ensuring your technical content is both clear and visually appealing.
       With markdown for text formatting and KaTeX for mathematical expressions, our template empowers you to communicate complex ideas effectively. Whether you're writing a scientific paper or a technical blog post, harnessing these tools will elevate your content and engage your readers.
+  - title: Color Palette
+    text: |
+      To customize the theme, edit UIkit variables in [theme.scss](https://github.com/denkiwakame/academic-project-template/blob/project-page/src/scss/theme.scss). Material Design colors are available as variables (e.g. `$clr-blue-50` ). For the full set of colors, please visit [Material Design Color System](https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors).
+
+      <table class="uk-table uk-table-small uk-text-small uk-table-divider">
+        <thead>
+          <tr>
+            <th>50</th>
+            <th>100</th>
+            <th>200</th>
+            <th>300</th>
+            <th>400</th>
+            <th>500</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td bgcolor="#FFEBEE">$clr-red-50</td>
+            <td bgcolor="#FFCCD2">$clr-red-100</td>
+            <td bgcolor="#EF9A9A">$clr-red-200</td>
+            <td bgcolor="#E57373">$clr-red-300</td>
+            <td bgcolor="#FF5350">$clr-red-400</td>
+            <td bgcolor="#F44336">$clr-red-500</td>
+          </tr>
+          <tr>
+            <td bgcolor="#FCE4EC">$clr-pink-50</td>
+            <td bgcolor="#F8BBD0">$clr-pink-100</td>
+            <td bgcolor="#F48FB1">$clr-pink-200</td>
+            <td bgcolor="#F06292">$clr-pink-300</td>
+            <td bgcolor="#EC407A">$clr-pink-400</td>
+            <td bgcolor="#E91E63">$clr-pink-500</td>
+          </tr>
+          <tr>
+            <td bgcolor="#E8EAF6">$clr-indigo-50</td>
+            <td bgcolor="#C5CAE9">$clr-indigo-100</td>
+            <td bgcolor="#9FA8DA">$clr-indigo-200</td>
+            <td bgcolor="#7986CB">$clr-indigo-300</td>
+            <td bgcolor="#5C6BC0">$clr-indigo-400</td>
+            <td bgcolor="#3F51B5">$clr-indigo-500</td>
+          </tr>
+          <tr>
+            <td bgcolor="#E0F7FA">$clr-cyan-50</td>
+            <td bgcolor="#B2EBF2">$clr-cyan-100</td>
+            <td bgcolor="#80DEEA">$clr-cyan-200</td>
+            <td bgcolor="#4DD0E1">$clr-cyan-300</td>
+            <td bgcolor="#26C6DA">$clr-cyan-400</td>
+            <td bgcolor="#00BCD4">$clr-cyan-500</td>
+          </tr>
+          <tr>
+            <td bgcolor="#E0F2F1">$clr-teal-50</td>
+            <td bgcolor="#B2DFDB">$clr-teal-100</td>
+            <td bgcolor="#80CBC4">$clr-teal-200</td>
+            <td bgcolor="#4DB6AC">$clr-teal-300</td>
+            <td bgcolor="#26A69A">$clr-teal-400</td>
+            <td bgcolor="#009688">$clr-teal-500</td>
+          </tr>
+          <tr>
+            <td bgcolor="#FFF8E1">$clr-amber-50</td>
+            <td bgcolor="#FFECB3">$clr-amber-100</td>
+            <td bgcolor="#FFE082">$clr-amber-200</td>
+            <td bgcolor="#FFD54F">$clr-amber-300</td>
+            <td bgcolor="#FFCA28">$clr-amber-400</td>
+            <td bgcolor="#FFC107">$clr-amber-500</td>
+          </tr>
+          <tr>
+            <td bgcolor="#F9FBE7">$clr-lime-50</td>
+            <td bgcolor="#F0F4C3">$clr-lime-100</td>
+            <td bgcolor="#E6EE9C">$clr-lime-200</td>
+            <td bgcolor="#DCE775">$clr-lime-300</td>
+            <td bgcolor="#D4E157">$clr-lime-400</td>
+            <td bgcolor="#CDDC39">$clr-lime-500</td>
+          </tr>
+          <tr>
+            <td bgcolor="#FAFAFA">$clr-grey-50</td>
+            <td bgcolor="#F5F5F5">$clr-grey-100</td>
+            <td bgcolor="#EEEEEE">$clr-grey-200</td>
+            <td bgcolor="#E0E0E0">$clr-grey-300</td>
+            <td bgcolor="#BDBDBD">$clr-grey-400</td>
+            <td bgcolor="#9E9E9E">$clr-grey-500</td>
+          </tr>
+        </tbody>
+      </table>
 projects: # relevant projects
   - title: Relevant Project I
     description: abstract text

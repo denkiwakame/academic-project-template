@@ -7,12 +7,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+@import 'material-design-color/material-color';
+
 $global-font-family: 'Poppins', 'Open Sans';
 $base-heading-font-family: 'Source Sans 3', 'Open Sans';
 
 // code block
-$base-pre-background: #f5f5f5;
-$base-pre-border: 0 solid #e5e5e5;
+$base-pre-background: $clr-grey-100;
+
+$base-pre-border: 0 solid $clr-grey-200;
 $base-pre-border-radius: 0;
 $base-pre-font-size: 14px;
 $base-pre-font-family: 'SFMono-Regular', 'Consolas', monospace;
@@ -27,16 +30,16 @@ $tooltip-border-radius: 5px;
 // $global-font-size: clamp(16px,4vw,16px);
 // $global-medium-font-size: clamp(15px,1vw,18px); // comment-font-size
 
-$accent-color: #df3079;
+$accent-color: $clr-pink-500;
 $global-link-color: $accent-color;
 $global-link-hover-color: $accent-color;
-$theme-color: #f5f5f5;
-$theme-color-fg: #222;
+$theme-color: $clr-grey-100;
+$theme-color-fg: $clr-black;
 $global-color: $theme-color-fg;
 $global-emphasis-color: $theme-color-fg;
 $base-heading-color: $theme-color-fg;
 
-$table-row-active-background: #ffd;
+$table-row-active-background: $clr-amber-50;
 
 $background-secondary-background: $theme-color;
 $button-primary-background: $theme-color;
