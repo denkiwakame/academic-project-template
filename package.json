@@ -49,6 +49,7 @@
     "@iconify/react": "^5.0.1",
     "marked": "^13.0.0",
     "marked-katex-extension": "^5.0.1",
+    "material-design-color": "^2.3.2",
     "normalize.css": "^8.0.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
