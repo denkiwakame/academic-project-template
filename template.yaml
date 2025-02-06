@@ -1,4 +1,4 @@
-theme: default # default || dark
+theme: default # default || classic || dark
 organization: Pixel Genius Labs
 twitter: '@denkivvakame'
 title: Academic Project Page Template
@@ -12,7 +12,7 @@ resources:
   huggingface: https://huggingface.co/
 description: academic projectpage template that supports markdown and KaTeX
 
-image: https://denkiwakame.github.io/academic-project-template/teaser.png
+image: https://denkiwakame.github.io/academic-project-template/teaser.jpg
 url: https://denkiwakame.github.io/academic-project-template
 speakerdeck: # speakerdeck slide ID
 authors:
@@ -49,11 +49,14 @@ bibtex: >
     note      = {This paper sets the benchmark for future AI research and applications.}
   }
 
-teaser: teaser.png
+teaser: teaser.jpg
 abstract: |
   This is a versatile template designed to satisfy your research project page needs, all while harnessing the power of 🎨**UIKit** and ⚛ **React**. Built on the foundations of simplicity and flexibility, this template allows you to focus on expressing your ideas without the hassle of directly handling CSS—thanks to customizable SASS variables.
   With markdown as your canvas and $\KaTeX$ for precise equations, crafting clear and engaging project page becomes effortless. Whether you're unraveling complex theories or presenting your findings, this template aims to support your scholarly endeavors with grace and ease.
   *Need to edit HTML directly?* Fear not! In addition to markdown, you can also directly write HTML with ease. Feel empowered to craft your content exactly as you envision it, whether through markdown's simplicity or the precision of HTML.
+
+  This template is provided under the [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](https://creativecommons.org/licenses/by-sa/4.0/) license.
+  You are free to use and modify the code in your project as long as you include a link to this [GitHub repository](https://github.com/denkiwakame/academic-project-template) in your footer.
 
 body:
   - title: Media examples

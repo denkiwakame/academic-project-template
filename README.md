@@ -5,7 +5,7 @@
 
 ## ✨ Features
 
-- 🚀 Built with ⚛️ [React](https://react.dev/) + 🎨[UIKit](https://getuikit.com/)
+- 🚀 Built with [React](https://react.dev/) + [UIKit](https://getuikit.com/)
 - 📝 Just one file! Write all metadata & content in [template.yaml](template.yaml)
 - 📝 Markdown support with full styling capabilities
 - ➗ Mathematical equations with KaTeX
@@ -13,7 +13,7 @@
 - 🔄 Auto-deployment with GitHub Actions
 - 📱 Fully responsive design
 
-🌐 **Demo**: [default-theme](https://denkiwakame.github.io/academic-project-template)
+🌐 **Demo**: [default-theme](https://denkiwakame.github.io/academic-project-template) | [classic-theme](https://github.com/user-attachments/assets/b8bc1e19-01b1-41a8-aff7-69047bb6ece2)
 
 ### ⚙️ Configuration
 
