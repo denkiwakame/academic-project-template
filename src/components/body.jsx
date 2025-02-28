@@ -5,8 +5,8 @@ import markedKatex from 'marked-katex-extension';
 import { markedHighlight } from 'marked-highlight';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/base16/gruvbox-dark-hard.css';
-//import 'highlight.js/styles/base16/github.css';
-//import 'highlight.js/styles/tokyo-night-dark.css';
+// import 'highlight.js/styles/base16/github.css';
+// import 'highlight.js/styles/tokyo-night-dark.css';
 // import 'highlight.js/styles/pojoaque.css';
 
 const renderer = new marked.Renderer();
