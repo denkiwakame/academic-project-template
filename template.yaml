@@ -118,7 +118,7 @@ body:
       #### Heading Level 4
       Markdown allows you to create tables like the following:
       ### Fictitious AI Benchmark Results
-      | Model Name          | Accuracy (%) | Inference Time (ms) |
+      | **Model Name** | **Accuracy (%)** ⬆️| **Inference Time (ms)** ⬇️|
       |---------------------|--------------|---------------------|
       | TransGPT-XT         | 96.3         | $\infty$                 |
       | GigaBERT Prime      | 94.7         | 9.5                 |
@@ -164,6 +164,21 @@ body:
           </tbody>
         </table>
       </div>
+
+      Code blocks are automatically highlighted by [highlight.js](https://highlightjs.org/examples). To change the theme, import a preferred `.css`.
+
+      ```javascript
+      # src/components/body.jsx
+      import { markedHighlight } from "marked-highlight";
+      import hljs from 'highlight.js';
+      //import 'highlight.js/styles/base16/gruvbox-dark-hard.css';
+      import 'highlight.js/styles/base16/github.css';
+
+      const renderer = new marked.Renderer();
+      renderer.code = (code, language) => {
+        return `<pre class="hljs"><code class="hljs language-${language}">${code}</code></pre>`
+      }
+      ```
   - title: KaTeX examples
     text: >
       $\KaTeX$ enables you to write mathematical expressions beautifully within your text (e.g. $\alpha$, $\beta$, $\gamma$ ).
@@ -256,6 +271,7 @@ body:
         </tbody>
       </table>
       </div>
+
 projects: # relevant projects
   - title: Relevant Project I
     description: abstract text
