@@ -20,6 +20,7 @@ export default defineConfig({
       },
     },
     target: 'es2015',
+    cssMinify: true,
   },
   server: {
     host: '0.0.0.0',
