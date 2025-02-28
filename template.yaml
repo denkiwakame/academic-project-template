@@ -63,7 +63,7 @@ body:
       [Slideshow](https://getuikit.com/docs/slideshow) example
 
       </div>
-      <div uk-slideshow="animation: fade">
+      <div uk-slideshow="animation: push">
         <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1">
           <div class="uk-slideshow-items">
             <div>
@@ -193,7 +193,8 @@ body:
           </tbody>
         </table>
       </div>
-
+  - title: Codeblock examples
+    text: |
       Code blocks are automatically highlighted by [highlight.js](https://highlightjs.org/examples). To change the theme, import a preferred `.css`.
 
       ```javascript
