@@ -43,6 +43,8 @@ $button-primary-background: $theme-color;
 $global-primary-background: $accent-color;
 $text-primary-color: $theme-color-fg;
 
+$base-focus-outline-style: none;
+
 // uikit imports
 @import 'uikit/src/scss/variables-theme.scss';
 @import 'uikit/src/scss/mixins-theme.scss';

@@ -58,8 +58,12 @@ abstract: |
 body:
   - title: Media examples
     text: |
+      ### Mediafile Path
       Files in `public/` can be referenced directly: `<img src="001.jpg" />`
 
+      ### UIKit Components
+      This template supports all UIKit components.
+      To check available components, refer to the [UIKit documentation](https://getuikit.com/docs).
       [Slideshow](https://getuikit.com/docs/slideshow) example
 
       </div>
@@ -83,13 +87,16 @@ body:
       </div>
 
       [Grid system](https://getuikit.com/docs/grid) example
-      <div class="uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
+      <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
         <div>
           <img src="001.jpg">
           <span class="uk-text-meta">Fig1 - caption example</figcaption>
         </div>
         <div>
-          <img src="002.jpg">
+          <img-comparison-slider>
+            <img slot="first" src="002.jpg" />
+            <img slot="second" src="004.jpg" />
+          </img-comparison-slider>
           <span class="uk-text-meta">Fig2 - caption example</figcaption>
         </div>
         <div>
@@ -100,7 +107,7 @@ body:
 
       [Video](https://getuikit.com/docs/video) and [Slider](https://getuikit.com/docs/slider) component example
       <div uk-slider>
-        <div class="uk-slider-items uk-child-width-1-1 uk-child-width-1-2@m uk-grid">
+        <div class="uk-slider-items uk-grid-small uk-child-width-1-1 uk-child-width-1-2@m uk-grid">
           <div>
             <video
               src="https://yootheme.com/site/images/media/yootheme-pro.mp4"
@@ -217,6 +224,7 @@ body:
       $$ \begin{CD} A @>a>> B \\ @VbVV @AAcA \\ C @= D \end{CD} $$
       [KaTeX supports a wide range of mathematical symbols and equations](https://katex.org/docs/support_table.html), ensuring your technical content is both clear and visually appealing.
       With markdown for text formatting and KaTeX for mathematical expressions, our template empowers you to communicate complex ideas effectively. Whether you're writing a scientific paper or a technical blog post, harnessing these tools will elevate your content and engage your readers.
+
   - title: Color Palette
     text: |
       To customize the theme, edit UIkit variables in [theme.scss](https://github.com/denkiwakame/academic-project-template/blob/project-page/src/scss/theme.scss). Material Design colors are available as variables (e.g. `$clr-blue-50` ). For the full set of colors, please visit [Material Design Color System](https://m2.material.io/design/color/the-color-system.html#tools-for-picking-colors).

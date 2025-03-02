@@ -48,6 +48,7 @@
     "@iconify-json/simple-icons": "^1.1.110",
     "@iconify/react": "^5.0.1",
     "highlight.js": "^11.11.1",
+    "img-comparison-slider": "^8.0.6",
     "marked": "^13.0.0",
     "marked-highlight": "^2.2.1",
     "marked-katex-extension": "^5.0.1",

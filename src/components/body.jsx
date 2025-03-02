@@ -4,10 +4,12 @@ import { marked } from 'marked';
 import markedKatex from 'marked-katex-extension';
 import { markedHighlight } from 'marked-highlight';
 import hljs from 'highlight.js';
-import 'highlight.js/styles/base16/gruvbox-dark-hard.css';
+//import 'highlight.js/styles/base16/gruvbox-dark-hard.css';
 // import 'highlight.js/styles/base16/github.css';
-// import 'highlight.js/styles/tokyo-night-dark.css';
+import 'highlight.js/styles/tokyo-night-dark.css';
 // import 'highlight.js/styles/pojoaque.css';
+
+import 'img-comparison-slider';
 
 const renderer = new marked.Renderer();
 renderer.table = (header, body) => {
