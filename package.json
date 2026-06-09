@@ -6,7 +6,7 @@
     "dev": "vite",
     "clean": "rm -rf build/",
     "build": "vite build",
-    "postbuild": "react-snap",
+    "postbuild": "react-snap && perl -0pi -e 's#http://localhost:45678/#./#g' build/*.html",
     "preview": "vite preview",
     "format": "prettier src/ --check",
     "format:fix": "prettier -w src/ --check",
